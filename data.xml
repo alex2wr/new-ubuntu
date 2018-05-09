@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <keys>
+        <key install="False">https://dl-ssl.google.com/linux/linux_signing_key.pub</key>
+        <key install="False">https://dl.sinew.in/keys/enpass-linux.key</key>
+        <key install="False">https://dl.winehq.org/wine-builds/Release.key</key>
+        <key install="True">https://www.virtualbox.org/download/oracle_vbox_2016.asc</key>
+    </keys>
+    <sources>
+        <repository install="False" >deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main</repository>
+        <repository install="False" >deb http://repo.sinew.in/ stable main</repository>
+        <repository install="True" >deb https://download.virtualbox.org/virtualbox/debian bionic contrib</repository>
+        <ppa install="False" >ppa:webupd8team/gnome3</ppa>
+        <ppa install="False" >ppa:notepadqq-team/notepadqq</ppa>
+        <ppa install="True" >https://dl.winehq.org/wine-builds/ubuntu/</ppa>
+    </sources>
+    <packages>
+        <package install="False">google-chrome-stable</package>
+        <package install="False">notepadqq</package>
+        <package install="False">dconf-editor</package>
+        <package install="False">nfs-common</package>
+        <package install="False">enpass</package>
+        <package install="True">virtualbox-5.2</package>
+        <package install="False">virtualbox-guest-additions-iso</package>
+        <package install="False">gnome-tweak-tool</package>
+        <package install="False">gimp</package>
+        <package install="False">synaptic</package>
+        <package install="False">usb-creator-gtk</package>
+        <package install="False">libreoffice</package>
+        <package install="False">chromium-browser</package>
+        <package install="False">thunderbird</package>
+        <package install="False">shotwell</package>
+        <package install="False">ubuntu-restricted-extras</package> <!-- Need to find out what this is -->
+        <package install="False">gnome-calendar</package>
+        <package install="False">gnome-appfolders-manager</package> <!-- Need to find out what this is -->
+        <package install="False">gnome-shell-extensions</package>
+        <package install="False">gnome-contacts</package>
+        <package install="False">emacs</package>
+        <package install="False">gnome-appfolders-manager</package> <!-- Need to find out what this is -->
+        <package install="False">qt</package>
+        <package install="False">geany</package>
+        <package install="False">git</package>
+    </packages>
+    <fstab>
+        <entry install="True">#Synology NFS shares</entry>
+        <entry install="True">10.0.0.5:/volume1/homes/alex2wr /mnt/myds/ nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0</entry>
+        <entry install="True">10.0.0.5:/volume1/photo /home/alex2wr/Pictures nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0</entry>
+        <entry install="True">10.0.0.5:/volume1/video /home/alex2wr/Videos nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0</entry>
+    </fstab>
+    <!--Downloads - this section is to downlaod files from websaites that don't have apt packages-->
+    <downloads>
+        <download install="True">http://download.oracle.com/otn-pub/java/jdk/10+46/76eac37278c24557a3c4199677f19b62/jdk-10_linux-x64_bin.tar.gz</download>
+        <download install="True">https://dl.google.com/dl/android/studio/ide-zips/3.1.1.0/android-studio-ide-173.4697961-linux.zip</download>
+        <download install="True">https://download-cf.jetbrains.com/python/pycharm-community-2018.1.1.tar.gz</download>
+        <download install="True">https://download-cf.jetbrains.com/idea/ideaIC-2018.1.1.tar.gz</download>
+        <download install="True">https://global.download.synology.com/download/Tools/SynologyDriveClient/1.0.2-10275/Ubuntu/Installer/x86_64/synology-drive-10275.x86_64.deb</download>
+    </downloads>
+</data>

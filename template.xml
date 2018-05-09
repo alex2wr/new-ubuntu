@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <!--This is a sample empty XML file to be used as a tempalte for your data.-->
+    <keys>
+        <key install="True"></key>
+    </keys>
+    <sources>
+        <repository install="True"></repository>
+        <ppa install="True"></ppa>
+    </sources>
+    <packages>
+        <package install="True"></package>
+    </packages>
+    <fstab>
+        <entry install="True"></entry>
+    </fstab>
+    <downloads>
+        <download install="True"></download>
+    </downloads>
+</data>
